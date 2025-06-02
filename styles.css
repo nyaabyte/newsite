@@ -53,7 +53,7 @@ html {
   gap: 10px;
 }
 
-.maintextcontainer {
+.maintextcontainer{
   border-radius: var(--border-radius);
   background-color: var(--background-light);
   color: var(--text-light);
@@ -64,8 +64,15 @@ html {
   justify-content: space-between;
 }
 
-.maintextcontainer span {
+ .maintextcontainer a{
+  color: var(--text-light);
+  text-decoration: none;
+width: fit-content;
+}
+
+.maintextcontainer span{
   color: var(--text-pink);
+  text-decoration: none;
 }
 
 .socials {
