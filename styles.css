@@ -2,29 +2,22 @@
   font-family: jetbrains;
   src: url(/JetBrains.ttf);
 }
-
 * {
   margin: 0;
   padding: 0;
 }
-
 :root {
   --primary-pink: #ff65b2;
   --background-light: #252525;
-
   --text-light: #e6d4dd;
   --text-pink: #e59ec2;
-
   --primary-font: jetbrains;
-
   --border-radius: 4px;
   --border-colour: #323232;
 }
-
 html {
   background-color: #212121;
 }
-
 .titleimage {
   display: block;
   height: 10rem;
@@ -32,7 +25,6 @@ html {
   filter: drop-shadow(0 0 8px var(--primary-pink));
   animation: titleimagepulse 10s infinite alternate;
 }
-
 @keyframes titleimagepulse {
   0% {
     filter: drop-shadow(0 0 6px var(--primary-pink));
@@ -44,7 +36,6 @@ html {
     filter: drop-shadow(0 0 6px var(--primary-pink));
   }
 }
-
 .blockcontainer {
   display: flex;
   width: 60%;
@@ -58,11 +49,6 @@ html {
   gap: 10px;
 }
 
-.rightcontainer .genericblock{
-  margin-top: 146.295%;
-  /*don't ask me how I derived this value because I forgot; the most I remember is it has something to do with half the element's height divided by a parent element's height multiplied by 100 and added with 125*/
-}
-
 .genericblock {
   border-radius: var(--border-radius);
   background-color: var(--background-light);
@@ -71,71 +57,63 @@ html {
   font-family: var(--primary-font);
   border: var(--border-colour) 2px solid;
 }
-
 .genericblock a {
   text-decoration: none;
   color: var(--text-pink);
 }
-
 .genericblock a:hover {
   text-decoration: underline;
 }
-
 .maintextcontainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-
 .maintextcontainer a {
   color: var(--text-light);
   text-decoration: none;
   width: fit-content;
 }
-
 .maintextcontainer span {
   color: var(--text-pink);
   text-decoration: none;
 }
-
 .socials {
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
   gap: 5px;
+  margin-top: 100px;
 }
-
 .socials p {
   font-size: 1rem;
   display: flex;
   align-items: center;
   gap: 5px;
 }
-
 .socials img {
   height: 1.75rem;
 }
-
 .sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
   font-size: 1.1rem;
+  position: fixed;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
 }
-
 .sidebar h2 {
   font-size: 1.8em;
 }
-
 .sidebar a {
   font-size: 1.2em;
 }
-
 .sidebar a:hover {
   text-decoration: underline;
 }
-
 .projects div {
   margin: 10px 0;
 }
