@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Itim&display=swap");
-
 @font-face {
   font-family: jetbrains;
   src: url(/JetBrains.ttf);
@@ -12,14 +10,15 @@
 
 :root {
   --primary-pink: #ff65b2;
-  --background-light: #323232;
+  --background-light: #252525;
 
   --text-light: #e6d4dd;
   --text-pink: #e59ec2;
 
   --primary-font: jetbrains;
 
-  --border-radius: 2px;
+  --border-radius: 4px;
+  --border-colour: #323232;
 }
 
 html {
@@ -29,7 +28,7 @@ html {
 .titleimage {
   display: block;
   height: 10rem;
-  margin: -10px auto -20px auto;
+  margin: -5px auto -35px auto;
   filter: drop-shadow(0 0 8px var(--primary-pink));
   animation: titleimagepulse 10s infinite alternate;
 }
@@ -39,7 +38,7 @@ html {
     filter: drop-shadow(0 0 6px var(--primary-pink));
   }
   50% {
-    filter: drop-shadow(0 0 12px var(--primary-pink));
+    filter: drop-shadow(0 0 18px var(--primary-pink));
   }
   100% {
     filter: drop-shadow(0 0 6px var(--primary-pink));
@@ -65,6 +64,7 @@ html {
   color: var(--text-light);
   padding: 5px 10px;
   font-family: var(--primary-font);
+  border: var(--border-colour) 2px solid;
 }
 
 .genericblock a {
