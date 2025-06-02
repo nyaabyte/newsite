@@ -58,6 +58,11 @@ html {
   gap: 10px;
 }
 
+.rightcontainer .genericblock{
+  margin-top: 146.295%;
+  /*don't ask me how I derived this value because I forgot; the most I remember is it has something to do with half the element's height divided by a parent element's height multiplied by 100 and added with 125*/
+}
+
 .genericblock {
   border-radius: var(--border-radius);
   background-color: var(--background-light);
